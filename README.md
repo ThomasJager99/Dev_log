@@ -27,7 +27,7 @@ I’m a beginner developer building my career in IT from scratch. This blog help
 
 ---
 
-![Brain](../Assets/img/ggg.png)
+![Brain](/Assets/img/ggg.png)
 
 ## 📝 Post Format
 
