@@ -44,9 +44,9 @@ Each post is a Markdown file and usually includes:
 
 Planned goals:
 
-1. Write 1–2 posts per week
+1. Write summary post at the end of the week 
 2. Focus on Python, SQL, Linux, and automation
-3. Launch a GitHub Pages site later
+3. Build a complete HomeLab to train real-world server skills and workflows.
 
 ---
 
