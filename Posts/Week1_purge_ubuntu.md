@@ -197,14 +197,18 @@ Lid closed, system alive — configuring logind.conf
 Task: Prevent the server (a repurposed laptop) from suspending when the lid is closed.
 
 Steps:
-	1.	Switched to root.
-	2.	Edited the config file:
+1.	Switched to root.
+	
+2.	Edited the config file:
 /etc/systemd/logind.conf
-	3.	Found this line (commented by default):
+
+3.	Found this line (commented by default):
 #HandleLidSwitch=suspend
-	4.	Uncommented it and changed value to:
+
+4.	Uncommented it and changed value to:
 HandleLidSwitch=ignore
-	5.	Rebooted system.
+
+5.	Rebooted system.
 
 Result:
 Now, the machine stays fully functional with the lid closed. SSH sessions stay alive, workflows uninterrupted.
