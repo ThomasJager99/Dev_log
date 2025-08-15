@@ -10,7 +10,7 @@ I was setting up a fresh Debian 13 system on my server and wanted to migrate fro
 ### The Problem
 
 * NetworkManager broke the IP settings when I tried to restart it.
-* SSH wouldn’t connect after the server rebooted because IP addresses kept changing (e.g. from `.117` back to `.116`, which conflicted with saved keys on my Mac).
+* SSH wouldn’t connect after the server rebooted because IP addresses kept changing (e.g. from `.121` back to `.120`, which conflicted with saved keys on my Mac).
 * Even after installing all the firmware and ensuring no blocks via `rfkill`, NetworkManager couldn’t manage the connection because `wpa_supplicant` was running independently.
 
 ### The Fix
@@ -18,9 +18,9 @@ I was setting up a fresh Debian 13 system on my server and wanted to migrate fro
 1. **Manual IP Assignment (before DHCP setup):**
 
 ```bash
-sudo ip addr add 192.168.178.50/24 dev wlp3s0
+sudo ip addr add 192.189.156.120/24 dev wlp3s0
 sudo ip link set wlp3s0 up
-sudo ip route add default via 192.168.178.1
+sudo ip route add default via 192.189.156.1
 echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf
 ```
 
